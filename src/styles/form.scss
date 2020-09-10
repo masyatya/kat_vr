@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    padding: 15px 5px;
+    margin-bottom: 24px;
+    outline: none;
+    border: none;
+    color: $regularColor;
+    border-bottom: 1px solid #2f2f2f;
+    background: transparent;
+    transition: 0.3s;
+
+    &:focus {
+      border-bottom: 1px solid $regularColor;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    padding: 15px 5px 65px;
+    border: none;
+    outline: none;
+    color: $regularColor;
+    border-bottom: 1px solid #2f2f2f;
+    background: transparent;
+    transition: 0.3s;
+
+    &:focus {
+      border-bottom: 1px solid $regularColor;
+    }
+  }
+
+}

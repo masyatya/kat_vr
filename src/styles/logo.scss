@@ -1,0 +1,13 @@
+.logo {
+  height: 16px;
+  width: 77.5px;
+  background-image: url(../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

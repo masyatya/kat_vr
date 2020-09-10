@@ -1,0 +1,110 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: $backgroundColor;
+
+  &__heading {
+    margin: 12px 0 24px;
+  }
+
+  &__info {
+    margin-right: 30px;
+
+    & p {
+      margin-bottom: 50px;
+    }
+
+    & a {
+      font-family: "Mark-Regular", Arial, Helvetica, sans-serif;
+      color: $paragraphColor;
+      transition: 0.3s;
+
+      &:hover {
+        color: $regularColor;
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+  }
+
+  &__link {
+    margin-top: 80px;
+    display: block;
+    outline: none;
+    border: none;
+  }
+
+  .button-up {
+    position: relative;
+    top: -48px;
+    left: calc(100% - 48px);
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/contact/Polygon.svg);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $highlightColor;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 23px -8px rgba(71,191,255,0.57);
+    }
+  }
+
+  @media (max-width: 699px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__heading {
+      margin-bottom: -100px;
+    }
+
+    &__info {
+      margin-right: 0;
+    }
+
+    &__info a,
+    .button-up {
+      display: none;
+    }
+
+    &__link {
+      margin: 30px auto;
+    }
+
+    &__info p {
+      position: relative;
+      top: 600px;
+    }
+
+    &__form {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 499px) {
+    & {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    &__heading {
+      margin-bottom: -100px;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__info p {
+      top: 620px;
+    }
+  }
+}

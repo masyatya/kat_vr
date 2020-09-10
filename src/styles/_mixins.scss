@@ -1,0 +1,3 @@
+@mixin containerPadding ($containerWidth: 1060px) {
+  padding: 50px calc(50% - #{$containerWidth} / 2);
+}

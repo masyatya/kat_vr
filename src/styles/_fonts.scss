@@ -1,6 +1,27 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "Mark-Regular";
+  src: url("../fonts/Mark-Regular.ttf") format("truetype");
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mark-Medium";
+  src: url(../fonts/Mark-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mark-Bold";
+  src: url(../fonts/Mark-Heavy.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Quantum";
+  src: url(../fonts/Quantum.otf) format("opentype");
+  font-style: normal;
+  font-weight: normal;
 }
